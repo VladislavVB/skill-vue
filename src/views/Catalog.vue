@@ -6,7 +6,11 @@
     </div>
 
     <div class="content__catalog">
-      <ProductFilter />
+      <ProductFilter
+        v-model:price-from="filterpriceFrom"
+        v-model:price-to="filterpriceTo"
+        v-model:category-id="filterCategiryId"
+      />
       <section class="catalog">
         <ul class="catalog__list">
           <ProductList :products="products" />
@@ -37,8 +41,8 @@ export default {
     return {
       page: 1,
       productsPerPage: 3,
-      filterpriceFrom: 0,
-      filterpriceTo: 0,
+      filterpriceFrom: '',
+      filterpriceTo: '',
       filterCategiryId: 0,
     };
   },
