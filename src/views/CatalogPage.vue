@@ -1,5 +1,5 @@
 <template>
-  <main class="content container">
+  
     <div class="content__top content__top--catalog">
       <h1 class="content__title">Каталог</h1>
       <span class="content__info"> 152 товара </span>
@@ -23,7 +23,6 @@
         />
       </section>
     </div>
-  </main>
 </template>
 <script>
 import ProductFilter from "@/components/Products/ProductFilter.vue";

@@ -1,11 +1,24 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav> -->
-  <router-view/>
+  <Header />
+  <main class="content container">
+    <router-view />
+  </main>
+
+  <Footer />
 </template>
 
+<script>
+import Header from "@/components/UI/Header.vue";
+import Footer from "@/components/UI/Footer.vue";
+
+export default {
+  name: "App",
+  components: {
+    Header,
+    Footer,
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
